@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vozes que Ecoam - Memória LGBTQIA+ Brasileira</title>
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTES GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER / NAVEGAÇÃO
+         ======================================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- LOGO - Substitua o src pela logo real -->
+                <div class="logo">
+                    <img src="imagens/vozes-logo-horizontal.svg" alt="Vozes que Ecoam" class="logo-img">
+                </div>
+
+                <!-- MENU DE NAVEGAÇÃO -->
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Início</a>
+                    <a href="#timeline" class="nav-link">Linha do Tempo</a>
+                    <a href="#news" class="nav-link">Notícias</a>
+                    <a href="#icons" class="nav-link">Ícones</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#contact" class="btn btn-secondary">Comunidade</a>
+                </nav>
+
+                <!-- MENU MOBILE (hamburguer) -->
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         SEÇÃO HERO (INÍCIO)
+         ======================================== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- LOGO GRANDE - Substitua pelo logo real -->
+                <img src="imagens/vozes-logo-horizontal.svg" alt="Vozes que Ecoam" class="hero-logo">
+
+                <p class="hero-subtitle">Preservando e celebrando a memória histórica LGBTQIA+ brasileira</p>
+                <p class="hero-description">Um espaço dedicado a honrar as lutas, conquistas e histórias que construíram o movimento LGBTQIA+ no Brasil e no mundo.</p>
+
+                <div class="hero-actions">
+                    <a href="#icons" class="btn btn-primary">Conheça os Ícones</a>
+                    <a href="#timeline" class="btn btn-secondary">Nossa História</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO LINHA DO TEMPO
+         Estilo lateral com anos à esquerda
+         ======================================== -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Linha do Tempo LGBT+</h2>
+            <p class="section-description">Explore os momentos históricos que moldaram o movimento pelos direitos LGBTQIA+ desde o início do século XX até os dias atuais. De 1924 até 2024, cada marco representa uma vitória conquistada.</p>
+
+            <!-- FILTROS DA TIMELINE -->
+            <div class="timeline-filters">
+                <button class="filter-btn active" data-filter="all">Marcos Históricos</button>
+                <button class="filter-btn" data-filter="legal">Direitos Legais</button>
+                <button class="filter-btn" data-filter="activism">Ativismo</button>
+                <button class="filter-btn" data-filter="culture">Cultura</button>
+            </div>
+
+            <!-- LINHA DO TEMPO LATERAL -->
+            <div class="timeline-wrapper">
+                <!-- LISTA DE ANOS À ESQUERDA (rolável com controle) -->
+                <div class="timeline-years">
+                    <button class="years-scroll up" aria-label="Rolar para cima">▲</button>
+                    <div class="years-list">
+                        <div class="year-item active" data-year="1924">1924</div>
+                        <div class="year-item" data-year="1933">1933</div>
+                        <div class="year-item" data-year="1948">1948</div>
+                        <div class="year-item" data-year="1950">1950</div>
+                        <div class="year-item" data-year="1955">1955</div>
+                        <div class="year-item" data-year="1966">1966</div>
+                        <div class="year-item" data-year="1969">1969</div>
+                        <div class="year-item" data-year="1970">1970</div>
+                        <div class="year-item" data-year="1973">1973</div>
+                        <div class="year-item" data-year="1978">1978</div>
+                        <div class="year-item" data-year="1980">1980</div>
+                        <div class="year-item" data-year="1981">1981</div>
+                        <div class="year-item" data-year="1985">1985</div>
+                        <div class="year-item" data-year="1989">1989</div>
+                        <div class="year-item" data-year="1990">1990</div>
+                        <div class="year-item" data-year="1995">1995</div>
+                        <div class="year-item" data-year="2001">2001</div>
+                        <div class="year-item" data-year="2002">2002</div>
+                        <div class="year-item" data-year="2008">2008</div>
+                        <div class="year-item" data-year="2011">2011</div>
+                        <div class="year-item" data-year="2013">2013</div>
+                        <div class="year-item" data-year="2015">2015</div>
+                        <div class="year-item" data-year="2018">2018</div>
+                        <div class="year-item" data-year="2019">2019</div>
+                        <div class="year-item" data-year="2020">2020</div>
+                        <div class="year-item" data-year="2021">2021</div>
+                        <div class="year-item" data-year="2022">2022</div>
+                        <div class="year-item" data-year="2023">2023</div>
+                        <div class="year-item" data-year="2024">2024</div>
+                    </div>
+                    <button class="years-scroll down" aria-label="Rolar para baixo">▼</button>
+                </div>
+
+                <!-- CONTEÚDO DOS EVENTOS -->
+                <div class="timeline-content-wrapper">
+                    <!-- Evento 1924 -->
+                    <div class="timeline-event active" data-year="1924" data-category="activism">
+                        <span class="event-year">1924</span>
+                        <span class="event-badge nascimento">Nascimento do movimento</span>
+                        <h3>Society for Human Rights</h3>
+                        <p class="event-location">📍 Nova York, EUA 📅 1924</p>
+                        <p>Rebelião de Stonewall Inn, bar frequentado por pessoas LGBT+, liderada por Marsha P. Johnson, Sylvia Rivera e outros ativistas. Este marco deu origem ao Movimento de Liberação Gay e inspirou as Paradas do Orgulho LGBT+ no mundo
+                            todo.
+                        </p>
+                        <p class="event-impact">💡 Impacto: Nascimento do movimento</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1933 -->
+                    <div class="timeline-event" data-year="1933" data-category="activism">
+                        <span class="event-year">1933</span>
+                        <h3>Destruição do Instituto de Sexologia</h3>
+                        <p class="event-location">📍 Berlim, Alemanha 📅 1933</p>
+                        <p>Nazistas destroem o Instituto de Sexologia de Magnus Hirschfeld em Berlim, um centro pioneiro de pesquisa sobre sexualidade e identidade de gênero.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1948 -->
+                    <div class="timeline-event" data-year="1948" data-category="culture">
+                        <span class="event-year">1948</span>
+                        <h3>Relatório Kinsey</h3>
+                        <p class="event-location">📍 Estados Unidos 📅 1948</p>
+                        <p>Estudo revolucionário sobre comportamento sexual humano nos Estados Unidos, quebrando tabus e abrindo discussões sobre diversidade sexual.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1950 -->
+                    <div class="timeline-event" data-year="1950" data-category="activism">
+                        <span class="event-year">1950</span>
+                        <h3>Fundação da Mattachine Society</h3>
+                        <p class="event-location">📍 Estados Unidos 📅 1950</p>
+                        <p>Uma das primeiras organizações de direitos LGBT+ dos Estados Unidos, focada em defender direitos civis de homossexuais.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1955 -->
+                    <div class="timeline-event" data-year="1955" data-category="activism">
+                        <span class="event-year">1955</span>
+                        <h3>Daughters of Bilitis</h3>
+                        <p class="event-location">📍 Estados Unidos 📅 1955</p>
+                        <p>Primeira organização lésbica dos Estados Unidos é fundada, lutando por direitos e visibilidade de mulheres lésbicas.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1966 -->
+                    <div class="timeline-event" data-year="1966" data-category="activism">
+                        <span class="event-year">1966</span>
+                        <h3>Rebelião de Compton's Cafeteria</h3>
+                        <p class="event-location">📍 São Francisco, EUA 📅 1966</p>
+                        <p>Primeira revolta conhecida de pessoas trans nos Estados Unidos, precursora de Stonewall.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1969 - STONEWALL -->
+                    <div class="timeline-event" data-year="1969" data-category="activism">
+                        <span class="event-year">1969</span>
+                        <span class="event-badge nascimento">Nascimento do movimento</span>
+                        <h3>Rebelião de Stonewall</h3>
+                        <p class="event-location">📍 Nova York, EUA 📅 1969</p>
+                        <p>Rebelião no bar Stonewall Inn em Nova York, marco do movimento LGBT+ moderno. Liderada por Marsha P. Johnson e Sylvia Rivera, inspirou as Paradas do Orgulho LGBT+ no mundo todo.</p>
+                        <p class="event-impact">💡 Impacto: Nascimento do movimento</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1970 -->
+                    <div class="timeline-event" data-year="1970" data-category="activism">
+                        <span class="event-year">1970</span>
+                        <h3>Primeira Parada do Orgulho Gay</h3>
+                        <p class="event-location">📍 Nova York, EUA 📅 1970</p>
+                        <p>Primeira manifestação do Orgulho LGBT+ é realizada, comemorando um ano da Rebelião de Stonewall.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1973 -->
+                    <div class="timeline-event" data-year="1973" data-category="legal">
+                        <span class="event-year">1973</span>
+                        <h3>Despatologização da Homossexualidade</h3>
+                        <p class="event-location">📍 Estados Unidos 📅 1973</p>
+                        <p>Associação Americana de Psiquiatria remove homossexualidade da lista de doenças mentais.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1978 -->
+                    <div class="timeline-event" data-year="1978" data-category="activism">
+                        <span class="event-year">1978</span>
+                        <h3>Assassinato de Harvey Milk</h3>
+                        <p class="event-location">📍 São Francisco, EUA 📅 1978</p>
+                        <p>Primeiro político abertamente gay eleito nos EUA é assassinado, tornando-se mártir do movimento LGBT+.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 1980 -->
+                    <div class="timeline-event" data-year="1980" data-category="activism">
+                        <span class="event-year">1980</span>
+                        <h3>Primeira Parada LGBT+ do Brasil</h3>
+                        <p class="event-location">📍 São Paulo, Brasil 📅 1980</p>
+                        <p>Realização da primeira manifestação LGBT+ organizada no Brasil.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+
+                    <!-- Adicione os outros 18 eventos aqui seguindo o mesmo padrão -->
+
+                    <!-- Evento 2024 -->
+                    <div class="timeline-event" data-year="2024" data-category="legal">
+                        <span class="event-year">2024</span>
+                        <h3>Brasil lidera direitos trans na América Latina</h3>
+                        <p class="event-location">📍 Brasil 📅 2024</p>
+                        <p>Brasil é reconhecido como líder em políticas de inclusão e direitos trans na América Latina.</p>
+                        <div class="event-nav">
+                            <button class="nav-arrow prev">Anterior</button>
+                            <button class="nav-arrow next">Próximo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO NOTÍCIAS
+         Com rolagem horizontal (carrossel)
+         ======================================== -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="section-title">Notícias Recentes</h2>
+            <p class="section-description">Fique por dentro das últimas novidades, conquistas e debates que movimentam a comunidade LGBTQIA+.</p>
+
+            <!-- FILTROS DE NOTÍCIAS -->
+            <div class="news-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="conquistas">Conquistas</button>
+                <button class="filter-btn" data-filter="memoria">Memória & Justiça</button>
+            </div>
+
+            <!-- CARROSSEL DE NOTÍCIAS -->
+            <div class="news-carousel">
+                <button class="carousel-btn prev-btn" id="newsPrev">‹</button>
+
+                <div class="news-track" id="newsTrack">
+                    <!-- Notícia 1 -->
+                    <article class="news-card" data-category="conquistas">
+                        <img src="imagens/noticias/noticia-01.jpg" alt="Notícia 1">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="badge badge-politics">Política</span>
+                                <span class="news-date">Out 2024</span>
+                            </div>
+                            <h3>STF aprova criminalização da LGBTfobia no Brasil</h3>
+                            <p>Supremo Tribunal Federal reconhece crimes contra população LGBT+ como forma de racismo.</p>
+                            <a href="#" class="news-link">Ler mais →</a>
+                        </div>
+                    </article>
+
+                    <!-- Notícia 2 -->
+                    <article class="news-card" data-category="memoria">
+                        <img src="imagens/noticias/noticia-02.jpg" alt="Notícia 2">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="badge badge-events">Memória</span>
+                                <span class="news-date">Set 2024</span>
+                            </div>
+                            <h3>Violência transfóbica: casos que ecoam</h3>
+                            <p>Registro e memória de violências contra pessoas LGBTQIA+, em busca de justiça e reparação.</p>
+                            <a href="#" class="news-link">Entender mais →</a>
+                        </div>
+                    </article>
+
+                    <!-- Notícia 3 -->
+                    <article class="news-card" data-category="conquistas">
+                        <img src="imagens/noticias/noticia-03.jpeg" alt="Notícia 3">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="badge badge-culture">Cultura</span>
+                                <span class="news-date">Ago 2024</span>
+                            </div>
+                            <h3>Liniker faz história no Grammy Latino</h3>
+                            <p>Primeira pessoa trans a vencer o Grammy Latino na categoria Melhor Álbum de MPB.</p>
+                            <a href="#" class="https://g1.globo.com/pop-arte/musica/noticia/2022/11/18/liniker-se-torna-primeira-artista-transgenero-brasileira-a-vencer-um-grammy-latino-historico.ghtml">Ler mais →</a>
+                        </div>
+                    </article>
+
+                    <!-- ADICIONE MAIS NOTÍCIAS COPIANDO O BLOCO ACIMA -->
+                </div>
+
+                <button class="carousel-btn next-btn" id="newsNext">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO ÍCONES
+         Mostra 3 inicialmente, botão "Ver Mais"
+         Com filtros Nacional/Internacional
+         ======================================== -->
+    <section id="icons" class="icons-section">
+        <div class="container">
+            <div class="section-banner">
+                <h2 class="section-title">Ícones e Memórias</h2>
+                <p class="section-description">Coletânea de ícones e memórias preservadas pelo arquivo: pessoas, trajetórias e eventos que marcaram nossa história.</p>
+            </div>
+
+            <!-- FILTROS DE ÍCONES -->
+            <div class="icons-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="nacional">Nacionais</button>
+                <button class="filter-btn" data-filter="internacional">Internacionais</button>
+            </div>
+
+            <!-- GRID DE ÍCONES -->
+            <div class="icons-grid" id="iconsGrid">
+                <!-- Ícone 1 - PABLLO VITTAR -->
+                <article class="icon-card" data-origin="nacional">
+                    <img src="imagens/icones/PablloVittar.jpg" alt="Pabllo Vittar">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Pabllo Vittar</h3>
+                        <p class="icon-title">Cantora drag, símbolo global</p>
+                        <div class="icon-meta">
+                            <span>📅 1993 - presente</span>
+                            <span>📍 São Luís, MA</span>
+                        </div>
+                        <p class="icon-description">Drag queen, cantora e compositora que se destacou por unir música pop e cultura drag, abrindo caminhos e rompendo preconceitos.</p>
+                    </div>
+                </article>
+
+                <!-- Ícone 2 - URIAS -->
+                <article class="icon-card" data-origin="nacional">
+                    <img src="imagens/icones/urias.jpg" alt="Urias">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Urias</h3>
+                        <p class="icon-title">Cantora e modelo trans</p>
+                        <div class="icon-meta">
+                            <span>📅 1994 - presente</span>
+                            <span>📍 Uberlândia, MG</span>
+                        </div>
+                        <p class="icon-description">Cantora, compositora e modelo trans conhecida por sua voz marcante, estética futurista e letras sobre liberdade e identidade.</p>
+                    </div>
+                </article>
+
+                <!-- Ícone 3 - LINIKER -->
+                <article class="icon-card" data-origin="nacional">
+                    <img src="imagens/icones/Liniker.jpeg" alt="Liniker">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Liniker</h3>
+                        <p class="icon-title">Cantora e ativista trans</p>
+                        <div class="icon-meta">
+                            <span>📅 1995 - presente</span>
+                            <span>📍 Araraquara, SP</span>
+                        </div>
+                        <p class="icon-description">Cantora e compositora brasileira, uma das vozes mais distintas da MPB contemporânea, ícone de representatividade trans.</p>
+                    </div>
+                </article>
+
+                <!-- Ícone 4 - MARSHA P. JOHNSON -->
+                <article class="icon-card hidden-icon" data-origin="internacional">
+                    <img src="imagens/icones/marsha-johnson.jpg" alt="Marsha P. Johnson">
+                    <div class="icon-badges">
+                        <span class="badge badge-activism">Ativismo</span>
+                        <span class="badge badge-rip">In Memoriam</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Marsha P. Johnson</h3>
+                        <p class="icon-title">Ativista trans e drag queen</p>
+                        <div class="icon-meta">
+                            <span>📅 1945 - 1992</span>
+                            <span>📍 Nova York, EUA</span>
+                        </div>
+                        <p class="icon-description">Figura central na Rebelião de Stonewall, pioneira na luta por direitos trans e fundadora da STAR.</p>
+                    </div>
+                </article>
+
+                <!-- Ícone 5 - HARVEY MILK -->
+                <article class="icon-card hidden-icon" data-origin="internacional">
+                    <img src="imagens/icones/harvey-milk.jpg" alt="Harvey Milk">
+                    <div class="icon-badges">
+                        <span class="badge badge-politics">Política</span>
+                        <span class="badge badge-rip">In Memoriam</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Harvey Milk</h3>
+                        <p class="icon-title">Político e ativista</p>
+                        <div class="icon-meta">
+                            <span>📅 1930 - 1978</span>
+                            <span>📍 São Francisco, EUA</span>
+                        </div>
+                        <p class="icon-description">Primeiro político abertamente gay eleito nos EUA, assassinado em 1978, mártir do movimento LGBT+.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Gloria-Groove.jpg" alt="Gloria Groove">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Gloria Groove</h3>
+                        <p class="icon-title">Lady Leste</p>
+                        <div class="icon-meta">
+                            <span>📅 1995 - presente</span>
+                            <span>📍 São Paulo, SP</span>
+                        </div>
+                        <p class="icon-description">Rapper, cantora e drag queen versátil, domina os charts com hits que misturam pop, funk e R&B.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Lin-da-quebrada.jpg" alt="Linn da Quebrada">
+                    <div class="icon-badges">
+                        <span class="badge badge-activism">Ativismo</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Linn da Quebrada</h3>
+                        <p class="icon-title">Artista Multimídia</p>
+                        <div class="icon-meta">
+                            <span>📅 1990 - presente</span>
+                            <span>📍 São Paulo, SP</span>
+                        </div>
+                        <p class="icon-description">Atriz e cantora que usa o corpo e a arte para questionar normas de gênero e sexualidade no Brasil.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Erika-Hilton.jpg" alt="Erika Hilton">
+                    <div class="icon-badges">
+                        <span class="badge badge-politics">Política</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Erika Hilton</h3>
+                        <p class="icon-title">Deputada Federal</p>
+                        <div class="icon-meta">
+                            <span>📅 1992 - presente</span>
+                            <span>📍 Franco da Rocha, SP</span>
+                        </div>
+                        <p class="icon-description">Primeira deputada federal negra e trans eleita na história do Brasil, líder na luta pelos direitos humanos.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Jean-Wyllys.jpg" alt="Jean Wyllys">
+                    <div class="icon-badges">
+                        <span class="badge badge-politics">Política</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Jean Wyllys</h3>
+                        <p class="icon-title">Jornalista e Político</p>
+                        <div class="icon-meta">
+                            <span>📅 1974 - presente</span>
+                            <span>📍 Alagoinhas, BA</span>
+                        </div>
+                        <p class="icon-description">Primeiro parlamentar assumidamente gay a pautar massivamente os direitos LGBTQIA+ no Congresso Nacional.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Rogeria.jpg" alt="Rogéria">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Arte</span>
+                        <span class="badge badge-rip">In Memoriam</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Rogéria</h3>
+                        <p class="icon-title">A Travesti da Família Brasileira</p>
+                        <div class="icon-meta">
+                            <span>📅 1943 - 2017</span>
+                            <span>📍 Cantagalo, RJ</span>
+                        </div>
+                        <p class="icon-description">Pioneira absoluta, abriu portas na TV e no teatro brasileiro com talento, humor e elegância inigualáveis.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Claudia-Wonder.jpg" alt="Claudia Wonder">
+                    <div class="icon-badges">
+                        <span class="badge badge-activism">Ativismo</span>
+                        <span class="badge badge-rip">In Memoriam</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Claudia Wonder</h3>
+                        <p class="icon-title">Artista e Ativista</p>
+                        <div class="icon-meta">
+                            <span>📅 1955 - 2010</span>
+                            <span>📍 São Paulo, SP</span>
+                        </div>
+                        <p class="icon-description">Figura lendária do underground paulistano, militante incansável pelos direitos das pessoas trans e travestis.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Renata-Carvalho.jpeg" alt="Renata Carvalho">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Teatro</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Renata Carvalho</h3>
+                        <p class="icon-title">Atriz e Diretora</p>
+                        <div class="icon-meta">
+                            <span>📅 1981 - presente</span>
+                            <span>📍 Santos, SP</span>
+                        </div>
+                        <p class="icon-description">Fundadora do MONART (Movimento Nacional de Artistas Trans), luta contra o 'transfake' no teatro e cinema.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/silvero-pereira.jpg" alt="Silvero Pereira">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Cinema</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Silvero Pereira</h3>
+                        <p class="icon-title">Ator e Diretor</p>
+                        <div class="icon-meta">
+                            <span>📅 1982 - presente</span>
+                            <span>📍 Mombaça, CE</span>
+                        </div>
+                        <p class="icon-description">Destaque em 'Bacurau' e na TV, traz a força do teatro nordestino e a representatividade queer para o mainstream.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Laerte-Coutinho.jpg" alt="Laerte Coutinho">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Arte</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Laerte Coutinho</h3>
+                        <p class="icon-title">Cartunista e Chargista</p>
+                        <div class="icon-meta">
+                            <span>📅 1951 - presente</span>
+                            <span>📍 São Paulo, SP</span>
+                        </div>
+                        <p class="icon-description">Gênia dos quadrinhos nacionais, revolucionou sua arte ao assumir sua identidade trans, criando obras profundas e filosóficas.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/joao-nery.jpg" alt="João W. Nery">
+                    <div class="icon-badges">
+                        <span class="badge badge-activism">Ativismo</span>
+                        <span class="badge badge-rip">In Memoriam</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>João W. Nery</h3>
+                        <p class="icon-title">Psicólogo e Escritor</p>
+                        <div class="icon-meta">
+                            <span>📅 1950 - 2018</span>
+                            <span>📍 Rio de Janeiro, RJ</span>
+                        </div>
+                        <p class="icon-description">Primeiro homem trans a realizar cirurgia de redesignação no Brasil, autor do livro essencial "Viagem Solitária".</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Jup-do-bairro.jpg" alt="Jup do Bairro">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Jup do Bairro</h3>
+                        <p class="icon-title">Cantora e Apresentadora</p>
+                        <div class="icon-meta">
+                            <span>📅 1993 - presente</span>
+                            <span>📍 São Paulo, SP</span>
+                        </div>
+                        <p class="icon-description">Multilartista que explora narrativas sobre corpos dissidentes, misturando rap, punk e eletrônico.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Thammy Miranda.jpg" alt="Thammy Miranda">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Mídia</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Thammy Miranda</h3>
+                        <p class="icon-title">Político e Influenciador</p>
+                        <div class="icon-meta">
+                            <span>📅 1982 - presente</span>
+                            <span>📍 São Paulo, SP</span>
+                        </div>
+                        <p class="icon-description">Sua transição pública trouxe visibilidade massiva para a causa dos homens trans no Brasil.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Indianara-siqueira.jpg" alt="Indianara Siqueira">
+                    <div class="icon-badges">
+                        <span class="badge badge-activism">Ativismo</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Indianara Siqueira</h3>
+                        <p class="icon-title">Líder Social</p>
+                        <div class="icon-meta">
+                            <span>📅 1971 - presente</span>
+                            <span>📍 Paranaguá, PR</span>
+                        </div>
+                        <p class="icon-description">Fundadora da Casa Nem, refúgio para pessoas trans vulneráveis, e ícone de resistência política no Rio de Janeiro.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/daniela-mercury.jpeg" alt="Daniela Mercury">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Daniela Mercury</h3>
+                        <p class="icon-title">Rainha do Axé</p>
+                        <div class="icon-meta">
+                            <span>📅 1965 - presente</span>
+                            <span>📍 Salvador, BA</span>
+                        </div>
+                        <p class="icon-description">Estrela global que usou sua plataforma para celebrar o amor livre e se tornou uma voz potente da comunidade lésbica.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Majur.jpg" alt="Majur">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Majur</h3>
+                        <p class="icon-title">Cantora e Compositora</p>
+                        <div class="icon-meta">
+                            <span>📅 1995 - presente</span>
+                            <span>📍 Salvador, BA</span>
+                        </div>
+                        <p class="icon-description">Define sua música como "Afropop", trazendo representatividade não-binária e ancestralidade em suas canções.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/duda-salabert.jpeg" alt="Duda Salabert">
+                    <div class="icon-badges">
+                        <span class="badge badge-politics">Política</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Duda Salabert</h3>
+                        <p class="icon-title">Professora e Política</p>
+                        <div class="icon-meta">
+                            <span>📅 1981 - presente</span>
+                            <span>📍 Belo Horizonte, MG</span>
+                        </div>
+                        <p class="icon-description">Primeira mulher trans eleita para o Congresso por Minas Gerais, com forte atuação em pautas ambientais e educacionais.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Nany People.jpg" alt="Nany People">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Arte</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Nany People</h3>
+                        <p class="icon-title">Humorista e Atriz</p>
+                        <div class="icon-meta">
+                            <span>📅 1965 - presente</span>
+                            <span>📍 Machado, MG</span>
+                        </div>
+                        <p class="icon-description">Pioneira na comédia e televisão brasileira, quebrou barreiras com humor inteligente e presença marcante.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="nacional">
+                    <img src="imagens/icones/Marcia-Corinto.jpeg" alt="Márcia do Corinto">
+                    <div class="icon-badges">
+                        <span class="badge badge-activism">Ativismo</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Márcia do Corinto</h3>
+                        <p class="icon-title">Militar e Ativista</p>
+                        <div class="icon-meta">
+                            <span>📅 Ativa - presente</span>
+                            <span>📍 Brasil</span>
+                        </div>
+                        <p class="icon-description">Conhecida por sua luta pioneira pelos direitos de pessoas trans dentro das forças armadas e instituições militares.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="internacional">
+                    <img src="imagens/icones/Sylvia-Rivera.jpg" alt="Sylvia Rivera">
+                    <div class="icon-badges">
+                        <span class="badge badge-activism">Ativismo</span>
+                        <span class="badge badge-rip">In Memoriam</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Sylvia Rivera</h3>
+                        <p class="icon-title">Ativista Trans</p>
+                        <div class="icon-meta">
+                            <span>📅 1951 - 2002</span>
+                            <span>📍 Nova York, EUA</span>
+                        </div>
+                        <p class="icon-description">Lutou incansavelmente pelos excluídos dentro da própria comunidade gay, focando em jovens de rua e trans.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="internacional">
+                    <img src="imagens/icones/Ellen-DeGeneres.jpg" alt="Ellen DeGeneres">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Entretenimento</span>
+                        <span class="badge badge-impact">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Ellen DeGeneres</h3>
+                        <p class="icon-title">Apresentadora</p>
+                        <div class="icon-meta">
+                            <span>📅 1958 - presente</span>
+                            <span>📍 Los Angeles, EUA</span>
+                        </div>
+                        <p class="icon-description">Fez história na TV americana ao se assumir lésbica em horário nobre nos anos 90, abrindo caminho para visibilidade.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="internacional">
+                    <img src="imagens/icones/Freddy-Mercury.jpg" alt="Freddie Mercury">
+                    <div class="icon-badges">
+                        <span class="badge badge-culture">Música</span>
+                        <span class="badge badge-rip">In Memoriam</span>
+                    </div>
+                    <div class="icon-content">
+                        <h3>Freddie Mercury</h3>
+                        <p class="icon-title">Líder do Queen</p>
+                        <div class="icon-meta">
+                            <span>📅 1946 - 1991</span>
+                            <span>📍 Londres, Reino Unido</span>
+                        </div>
+                        <p class="icon-description">Uma das maiores vozes do rock mundial, desafiou estereótipos com sua performance extravagante e talento eterno.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon" data-origin="internacional">
+                    <img src="imagens/icones/rupaul.jpg" alt=" RuPaul ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Entretenimento</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>RuPaul</h3>
+                        <p class="icon-title ">Supermodel of the World</p>
+                        <div class="icon-meta ">
+                            <span>📅 1960 - presente</span>
+                            <span>📍 Los Angeles, EUA</span>
+                        </div>
+                        <p class="icon-description ">Transformou a arte Drag em um fenômeno mainstream global, vencendo múltiplos Emmys com Drag Race.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Laverne-Cox.jpg " alt="Laverne Cox ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Atuação</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Laverne Cox</h3>
+                        <p class="icon-title ">Atriz e Produtora</p>
+                        <div class="icon-meta ">
+                            <span>📅 1972 - presente</span>
+                            <span>📍 Nova York, EUA</span>
+                        </div>
+                        <p class="icon-description ">Primeira pessoa trans indicada ao Emmy de atuação, trouxe discussões vitais sobre direitos trans para a grande mídia.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Elliot-Page.jpg " alt="Elliot Page ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Cinema</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Elliot Page</h3>
+                        <p class="icon-title ">Ator e Produtor</p>
+                        <div class="icon-meta ">
+                            <span>📅 1987 - presente</span>
+                            <span>📍 Halifax, Canadá</span>
+                        </div>
+                        <p class="icon-description ">Ator indicado ao Oscar que inspirou milhões ao compartilhar sua jornada de transição e ativismo.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Sam-Smith.jpg " alt="Sam Smith ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Música</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Sam Smith</h3>
+                        <p class="icon-title ">Cantore e Compositore</p>
+                        <div class="icon-meta ">
+                            <span>📅 1992 - presente</span>
+                            <span>📍 Londres, Reino Unido</span>
+                        </div>
+                        <p class="icon-description ">Vencedore do Grammy e Oscar, trouxe visibilidade global para a identidade não-binária na indústria musical.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Lil-Nas-X.jpg " alt="Lil Nas X ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Música</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Lil Nas X</h3>
+                        <p class="icon-title ">Rapper e Ícone Pop</p>
+                        <div class="icon-meta ">
+                            <span>📅 1999 - presente</span>
+                            <span>📍 Atlanta, EUA</span>
+                        </div>
+                        <p class="icon-description ">Desafiou o conservadorismo do country e hip-hop, celebrando sua sexualidade de forma unapologética e viral.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Billy-Porter.jpg " alt="Billy Porter ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Atuação</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Billy Porter</h3>
+                        <p class="icon-title ">Ator e Ícone Fashion</p>
+                        <div class="icon-meta ">
+                            <span>📅 1969 - presente</span>
+                            <span>📍 Pittsburgh, EUA</span>
+                        </div>
+                        <p class="icon-description ">Estrela da Broadway e da série 'Pose', redefiniu a moda masculina no tapete vermelho com looks sem gênero.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Jonathan-Van-Ness.jpg " alt="Jonathan Van Ness ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Entretenimento</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Jonathan Van Ness</h3>
+                        <p class="icon-title ">Cabelereire e Apresentadore</p>
+                        <div class="icon-meta ">
+                            <span>📅 1987 - presente</span>
+                            <span>📍 Illinois, EUA</span>
+                        </div>
+                        <p class="icon-description ">Estrela de 'Queer Eye', promove o amor próprio, positividade e a visibilidade não-binária com carisma único.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Adam-rippon.jpeg " alt="Adam Rippon ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-sport ">Esportes</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Adam Rippon</h3>
+                        <p class="icon-title ">Patinador Olímpico</p>
+                        <div class="icon-meta ">
+                            <span>📅 1989 - presente</span>
+                            <span>📍 EUA</span>
+                        </div>
+                        <p class="icon-description ">Primeiro homem abertamente gay dos EUA a ganhar uma medalha nos Jogos Olímpicos de Inverno.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/megan-rapinoe.jpg " alt="Megan Rapinoe ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-sport ">Esportes</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Megan Rapinoe</h3>
+                        <p class="icon-title ">Jogadora de Futebol</p>
+                        <div class="icon-meta ">
+                            <span>📅 1985 - presente</span>
+                            <span>📍 EUA</span>
+                        </div>
+                        <p class="icon-description ">Campeã mundial e ativista vocal por igualdade salarial e direitos LGBTQIA+ no esporte.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Kristen-Stewart.jpg " alt="Kristen Stewart ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Cinema</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Kristen Stewart</h3>
+                        <p class="icon-title ">Atriz</p>
+                        <div class="icon-meta ">
+                            <span>📅 1990 - presente</span>
+                            <span>📍 Los Angeles, EUA</span>
+                        </div>
+                        <p class="icon-description ">De estrela teen a ícone do cinema indie, traz representatividade queer autêntica para Hollywood.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/sarah-paulson.jpg " alt="Sarah Paulson ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Atuação</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Sarah Paulson</h3>
+                        <p class="icon-title ">Atriz</p>
+                        <div class="icon-meta ">
+                            <span>📅 1974 - presente</span>
+                            <span>📍 Tampa, EUA</span>
+                        </div>
+                        <p class="icon-description ">Vencedora do Emmy e Globo de Ouro, é uma das atrizes mais respeitadas de sua geração e abertamente lésbica.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/hunter-schafer.jpg " alt="Hunter Schafer ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Atuação</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Hunter Schafer</h3>
+                        <p class="icon-title ">Atriz e Modelo</p>
+                        <div class="icon-meta ">
+                            <span>📅 1998 - presente</span>
+                            <span>📍 Trenton, EUA</span>
+                        </div>
+                        <p class="icon-description ">Ativista dos direitos trans que ganhou fama global com sua atuação impactante na série 'Euphoria'.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/ricky martin.jpeg " alt="Ricky Martin ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Música</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Ricky Martin</h3>
+                        <p class="icon-title ">Cantor e Ator</p>
+                        <div class="icon-meta ">
+                            <span>📅 1971 - presente</span>
+                            <span>📍 Porto Rico</span>
+                        </div>
+                        <p class="icon-description ">Rei do Pop Latino, sua saída do armário foi um marco cultural massivo para a comunidade latina global.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Troye-Sivan.jpg" alt="Troye Sivan ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Música</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Troye Sivan</h3>
+                        <p class="icon-title ">Cantor Pop</p>
+                        <div class="icon-meta ">
+                            <span>📅 1995 - presente</span>
+                            <span>📍 Austrália</span>
+                        </div>
+                        <p class="icon-description ">Documentou sua jornada no YouTube e se tornou um dos principais nomes do pop queer contemporâneo.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Divine.jpg " alt="Divine ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Cinema</span>
+                        <span class="badge badge-rip ">In Memoriam</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Divine</h3>
+                        <p class="icon-title ">Drag Queen e Ator</p>
+                        <div class="icon-meta ">
+                            <span>📅 1945 - 1988</span>
+                            <span>📍 Baltimore, EUA</span>
+                        </div>
+                        <p class="icon-description ">Musa do cinema trash de John Waters e a inspiração visual para a vilã Úrsula da Disney.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/candy-darling.jpg " alt="Candy Darling ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Cinema</span>
+                        <span class="badge badge-rip ">In Memoriam</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Candy Darling</h3>
+                        <p class="icon-title ">Atriz e Warhol Superstar</p>
+                        <div class="icon-meta ">
+                            <span>📅 1944 - 1974</span>
+                            <span>📍 Nova York, EUA</span>
+                        </div>
+                        <p class="icon-description ">Ícone trans de beleza etérea, musa de Andy Warhol e do Velvet Underground.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/pedro-lemebel.jpeg " alt="Pedro Lemebel ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Literatura</span>
+                        <span class="badge badge-rip ">In Memoriam</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Pedro Lemebel</h3>
+                        <p class="icon-title ">Escritor e Artista Visual</p>
+                        <div class="icon-meta ">
+                            <span>📅 1952 - 2015</span>
+                            <span>📍 Santiago, Chile</span>
+                        </div>
+                        <p class="icon-description ">Voz feroz da contracultura chilena, usou a escrita e performance para desafiar a ditadura e o conservadorismo.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/sylvester.jpg " alt="Sylvester ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Música</span>
+                        <span class="badge badge-rip ">In Memoriam</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Sylvester</h3>
+                        <p class="icon-title ">Rainha da Disco</p>
+                        <div class="icon-meta ">
+                            <span>📅 1947 - 1988</span>
+                            <span>📍 Los Angeles, EUA</span>
+                        </div>
+                        <p class="icon-description ">Lenda da música Disco, conhecido por sua voz em falsete e visual andrógino extravagante.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/marlon-riggs.jpg " alt="Marlon Riggs ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Cinema</span>
+                        <span class="badge badge-rip ">In Memoriam</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Marlon Riggs</h3>
+                        <p class="icon-title ">Cineasta e Ativista</p>
+                        <div class="icon-meta ">
+                            <span>📅 1957 - 1994</span>
+                            <span>📍 Oakland, EUA</span>
+                        </div>
+                        <p class="icon-description ">Diretor do seminal 'Tongues Untied', deu voz à experiência de ser negro e gay na América.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/ian-mckellen.jpg " alt="Ian McKellen ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Teatro</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Ian McKellen</h3>
+                        <p class="icon-title ">Ator</p>
+                        <div class="icon-meta ">
+                            <span>📅 1939 - presente</span>
+                            <span>📍 Londres, Reino Unido</span>
+                        </div>
+                        <p class="icon-description ">Lenda do teatro e cinema, co-fundador do Stonewall UK, lutando por direitos gays há décadas.</p>
+                    </div>
+                </article>
+
+                <article class="icon-card hidden-icon " data-origin="internacional ">
+                    <img src="imagens/icones/Cynthia-nixon.jpg " alt="Cynthia Nixon ">
+                    <div class="icon-badges ">
+                        <span class="badge badge-culture ">Atuação</span>
+                        <span class="badge badge-impact ">Impacto Alto</span>
+                    </div>
+                    <div class="icon-content ">
+                        <h3>Cynthia Nixon</h3>
+                        <p class="icon-title ">Atriz e Ativista</p>
+                        <div class="icon-meta ">
+                            <span>📅 1966 - presente</span>
+                            <span>📍 Nova York, EUA</span>
+                        </div>
+                        <p class="icon-description ">Estrela de 'Sex and the City', tornou-se uma política progressista ativa na luta por direitos LGBTQIA+ e educação.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- BOTÃO VER MAIS -->
+            <div class="view-more-container">
+                <button class="btn btn-primary" id="viewMoreBtn">Ver Mais Ícones</button>
+            </div>
+
+            <!-- SUGERIR ÍCONE -->
+            <div class="suggest-section">
+                <h3>Esquecemos de alguém importante?</h3>
+                <p>Se lembra de alguém que deveria estar aqui? Conte pra gente — sua sugestão será revisada pela equipe.</p>
+                <button id="openSuggestBtn" class="btn btn-secondary">Sugerir Ícone</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO SOBRE O PROJETO
+         ======================================== -->
+    <section id="about" class="about-section">
+        <div class="container ">
+            <h2 class="section-title ">Sobre o Projeto</h2>
+
+            <div class="about-content ">
+                <div class="about-card ">
+                    <h3>♥ Vozes que Ecoam</h3>
+                    <p>Somos um projeto dedicado à preservação da memória LGBTQIA+ brasileira. Nossa missão é garantir que as histórias, conquistas e lutas de nossa comunidade nunca sejam esquecidas.</p>
+                    <span class="badge-project ">Projeto Social • Sem Fins Lucrativos</span>
+                </div>
+
+                <div class="about-card ">
+                    <h3>Nossa Missão</h3>
+                    <p>O "Vozes que Ecoam " nasceu da necessidade urgente de preservar e divulgar a memória histórica da comunidade LGBTQIA+ brasileira.</p>
+                </div>
+
+                <div class="about-card ">
+                    <h3>Por que este projeto existe?</h3>
+                    <p>A invisibilização histórica da comunidade LGBT+ não é acidental. É resultado de séculos de preconceito, perseguição e negação de direitos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO VALORES
+         ======================================== -->
+    <section id="values " class="values-section ">
+        <div class="container ">
+            <h2 class="section-title ">Nossos Valores</h2>
+            <p class="section-description ">Os princípios que guiam nosso trabalho e nossa visão de mundo.</p>
+
+            <div class="values-grid ">
+                <div class="value-card ">
+                    <div class="value-icon ">❤️</div>
+                    <h3>Inclusão</h3>
+                    <p>Acreditamos que todos merecem ter suas histórias contadas e preservadas, independente de sua identidade.</p>
+                </div>
+
+                <div class="value-card ">
+                    <div class="value-icon ">👁️</div>
+                    <h3>Visibilidade</h3>
+                    <p>Promovemos a visibilidade de pessoas e acontecimentos LGBTQIA+ que foram historicamente invisibilizados.</p>
+                </div>
+
+                <div class="value-card ">
+                    <div class="value-icon ">🎯</div>
+                    <h3>Educação</h3>
+                    <p>Oferecemos conteúdo educativo e informativo para formar cidadãos mais conscientes e empáticos.</p>
+                </div>
+
+                <div class="value-card ">
+                    <div class="value-icon ">💡</div>
+                    <h3>Inovação</h3>
+                    <p>Utilizamos tecnologia para criar formas criativas e acessíveis de preservar e compartilhar memórias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO CONTATO
+         ======================================== -->
+    <section id="contact" class="contact-section">
+        <div class="container ">
+            <h2 class="section-title ">Entre em Contato</h2>
+            <p class="section-description ">Tem uma história para compartilhar, sugestão ou dúvida? Queremos ouvir você e construir juntos este projeto.</p>
+
+            <div class="contact-grid ">
+                <div class="contact-card ">
+                    <div class="contact-icon ">📧</div>
+                    <h3>Email</h3>
+                    <p>contato@vozesqueecoam.org</p>
+                    <a href="mailto:contato@vozesqueecoam.org" class="btn btn-secondary">Enviar Email</a>
+                </div>
+
+                <div class="contact-card ">
+                    <div class="contact-icon ">👥</div>
+                    <h3>Comunidade</h3>
+                    <p>Participe de nossas discussões</p>
+                    <a href="https://discord.gg/seu-link-aqui " target="_blank " class="btn btn-secondary ">Juntar-se ao Discord</a>
+                </div>
+
+                <div class="contact-card ">
+                    <div class="contact-icon ">❤️</div>
+                    <h3>Contribuir</h3>
+                    <p>Ajude a manter o projeto vivo</p>
+                    <a href="# " class="btn btn-secondary ">Fazer Doação</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO CTA FINAL
+         ======================================== -->
+    <section class="cta-section ">
+        <div class="container ">
+            <h2>Faça Parte da Nossa História</h2>
+            <p>O "Vozes que Ecoam " é construído por pessoas como você. Sua contribuição ajuda a preservar nossa memória coletiva.</p>
+            <div class="cta-buttons ">
+                <a href="#contact" class="btn btn-primary">Compartilhar Minha História</a>
+                <a href="# " class="btn btn-secondary-white ">Voluntariar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT EXTERNO -->
+    <div class="modal suggest-modal" id="suggestModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <button class="modal-close" id="closeSuggestModal" aria-label="Fechar">×</button>
+
+            <div class="modal-body">
+                <h3>Enviar sugestão de ícone</h3>
+
+                <form id="suggestForm">
+                    <div class="form-grid">
+                        <input type="text" name="name" placeholder="Nome (ex: Maria Silva)" required>
+                        <input type="text" name="period" placeholder="Período (ex: 1970 - presente)">
+                        <input type="text" name="location" placeholder="Local / origem">
+                        <input type="text" name="category" placeholder="Categoria (ex: Música)">
+                        <input type="url" name="img" placeholder="URL da imagem (opcional)">
+                        <select name="origin">
+                            <option value="nacional">Nacional</option>
+                            <option value="internacional">Internacional</option>
+                        </select>
+                        <textarea name="description" placeholder="Descrição / justificativa"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Enviar Sugestão</button>
+                        <button type="button" id="clearSuggest" class="btn btn-secondary">Limpar</button>
+                    </div>
+                </form>
+
+                <div class="thankyou" id="suggestThankyou" hidden>
+                    <div class="thank-image" aria-hidden="true">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" fill="#D4BAFF" />
+                            <path d="M7 12.5l2.5 2.5L17 8" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>A equipe do vozes que ecoam agradece.</h3>
+                    <p>Recebemos sua sugestão — vamos analisar e retornar quando for o caso.</p>
+                    <div style="margin-top:1rem; text-align:center;"><button class="btn btn-secondary" id="closeThankyou">Fechar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

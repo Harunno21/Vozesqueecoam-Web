@@ -1,4 +1,4 @@
-#Vozes que Ecoam 🏳️‍🌈
+# Vozes que Ecoam 🏳️‍🌈
 
 > Um espaço digital dedicado à preservação da memória, identidade e cultura da comunidade LGBT+.
 
